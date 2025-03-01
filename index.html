@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সেহরি ও ইফতারের সময়সূচি (ঢাকা জেলা)</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>তোহফায়ে রমাযান</h1>
+            <h2>ঢাকা ও পার্শ্ববর্তী এলাকার জন্য সাহরী ও ইফতারের সময়সূচি</h2>
+            <p>রমজান ১৪৪৬ হিজরি | ২০২৫ খ্রিস্টাব্দ - ১৪৩১ বাংলা</p>
+            <p class="time-date" id="timeDate"></p>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>রমজান</th>
+                    <th>তারিখ</th>
+                    <th>বার</th>
+                    <th>সেহরির শেষ সময়</th>
+                    <th>ফজরের ওয়াক্ত</th>
+                    <th>ইফতারের সময়</th>
+                </tr>
+            </thead>
+            <tbody id="ramadanTable">
+                <!-- ১ থেকে ৩০ রমজান পর্যন্ত তালিকা -->
+                <tr data-date="1"><td>০০</td><td>০১ মার্চ</td><td>শনিবার</td><td>৫:০৪</td><td>৫:০৫</td><td>৬:০২</td></tr>
+                <tr data-date="2"><td>০১</td><td>০২ মার্চ</td><td>রবিবার</td><td>৫:০৪</td><td>৫:০৫</td><td>৬:০২</td></tr>
+                <tr data-date="3"><td>০২</td><td>০৩ মার্চ</td><td>সোমবার</td><td>৫:০৩</td><td>৫:০৪</td><td>৬:০৩</td></tr>
+                <tr data-date="4"><td>০৩</td><td>০৪ মার্চ</td><td>মঙ্গলবার</td><td>৫:০২</td><td>৫:০৩</td><td>৬:০৩</td></tr>
+                <tr data-date="5"><td>০৪</td><td>০৫ মার্চ</td><td>বুধবার</td><td>৫:০১</td><td>৫:০২</td><td>৬:০৪</td></tr>
+                <tr data-date="6"><td>০৫</td><td>০৬ মার্চ</td><td>বৃহস্পতিবার</td><td>৫:০০</td><td>৫:০১</td><td>৬:০৪</td></tr>
+                <tr data-date="7"><td>০৬</td><td>০৭ মার্চ</td><td>শুক্রবার</td><td>৪:৫৯</td><td>৫:০০</td><td>৬:০৫</td></tr>
+                <tr data-date="8"><td>০৭</td><td>০৮ মার্চ</td><td>শনিবার</td><td>৪:৫৮</td><td>৪:৫৯</td><td>৬:০৫</td></tr>
+                <tr data-date="9"><td>০৮</td><td>০৯ মার্চ</td><td>রবিবার</td><td>৪:৫৭</td><td>৪:৫৮</td><td>৬:০৬</td></tr>
+                <tr data-date="10"><td>০৯</td><td>১০ মার্চ</td><td>সোমবার</td><td>৪:৫৬</td><td>৪:৫৭</td><td>৬:০৬</td></tr>
+                <tr data-date="11"><td>১০</td><td>১১ মার্চ</td><td>মঙ্গলবার</td><td>৪:৫৫</td><td>৪:৫৬</td><td>৬:০৬</td></tr>
+                
+                <tr data-date="12"><td>১১</td><td>১২ মার্চ</td><td>বুধবার</td><td>৪:৫৪</td><td>৪:৫৫</td><td>৬:০৭</td></tr>
+                <tr data-date="13"><td>১২</td><td>১৩ মার্চ</td><td>বৃহস্পতিবার</td><td>৪:৫৩</td><td>৪:৫৪</td><td>৬:০৭</td></tr>
+                <tr data-date="14"><td>১৩</td><td>১৪ মার্চ</td><td>শুক্রবার</td><td>৪:৫২</td><td>৪:৫৩</td><td>৬:০৮</td></tr>
+                <tr data-date="15"><td>১৪</td><td>১৫ মার্চ</td><td>শনিবার</td><td>৪:৫১</td><td>৪:৫২</td><td>৬:০৮</td></tr>
+                <tr data-date="16"><td>১৫</td><td>১৬ মার্চ</td><td>রবিবার</td><td>৪:৫০</td><td>৪:৫১</td><td>৬:০৮</td></tr>
+                <tr data-date="17"><td>১৬</td><td>১৭ মার্চ</td><td>সোমবার</td><td>৪:৪৯</td><td>৪:৫০</td><td>৬:০৯</td></tr>
+                <tr data-date="18"><td>১৭</td><td>১৮ মার্চ</td><td>মঙ্গলবার</td><td>৪:৪৮</td><td>৪:৪৯</td><td>৬:০৯</td></tr>
+                <tr data-date="19"><td>১৮</td><td>১৯ মার্চ</td><td>বুধবার</td><td>৪:৪৭</td><td>৪:৪৮</td><td>৬:১০</td></tr>
+                <tr data-date="20"><td>১৯</td><td>২০ মার্চ</td><td>বৃহস্পতিবার</td><td>৪:৪৬</td><td>৪:৪৭</td><td>৬:১০</td></tr>
+                <tr data-date="21"><td>২০</td><td>২১ মার্চ</td><td>শুক্রবার</td><td>৪:৪৫</td><td>৪:৪৬</td><td>৬:১০</td></tr>
+                
+                <tr data-date="22"><td>২১</td><td>২২ মার্চ</td><td>শনিবার</td><td>৪:৪৪</td><td>৪:৪৫</td><td>৬:১১</td></tr>
+                <tr data-date="23"><td>২২</td><td>২৩ মার্চ</td><td>রবিবার</td><td>৪:৪৩</td><td>৪:৪৪</td><td>৬:১১</td></tr>
+                <tr data-date="24"><td>২৩</td><td>২৪ মার্চ</td><td>সোমবার</td><td>৪:৪২</td><td>৪:৪৩</td><td>৬:১১</td></tr>
+                <tr data-date="25"><td>২৪</td><td>২৫ মার্চ</td><td>মঙ্গলবার</td><td>৪:৪১</td><td>৪:৪২</td><td>৬:১২</td></tr>
+                <tr data-date="26"><td>২৫</td><td>২৬ মার্চ</td><td>বুধবার</td><td>৪:৪০</td><td>৪:৪১</td><td>৬:১২</td></tr>
+                <tr data-date="27"><td>২৬</td><td>২৭ মার্চ</td><td>বৃহস্পতিবার</td><td>৪:৩৯</td><td>৪:৪০</td><td>৬:১৩</td></tr>
+                <tr data-date="28"><td>২৭</td><td>২৮ মার্চ</td><td>শুক্রবার</td><td>৪:৩৮</td><td>৪:৩৯</td><td>৬:১৩</td></tr>
+                <tr data-date="29"><td>২৮</td><td>২৯ মার্চ</td><td>শনিবার</td><td>৪:৩৬</td><td>৪:৩৭</td><td>৬:১৪</td></tr>
+                <tr data-date="30"><td>২৯</td><td>৩০ মার্চ</td><td>রবিবার</td><td>৪:৩৫</td><td>৪:৩৬</td><td>৬:১৪</td></tr>
+                <tr data-date="31"><td>৩০</td><td>৩১ মার্চ</td><td>সোমবার</td><td>৪:৩৪</td><td>৪:৩৫</td><td>৬:১৫</td></tr>
+            </tbody>
+        </table>
+
+        <!-- city settings -->
+		<div class="city-adjust-time-layout">
+            <div class="city-time-layout">
+              <h3 class="ramadan-city-title">ঢাকার সময় থেকে বাড়বে</h3>
+              <table class="tableDesign">
+                  <tr class="haderTitle">
+                      <td>শহর</td>
+                      <td>সেহরি</td>
+                      <td>ইফতার</td>
+                  </tr>
+                  <tr id="rajshahi_city">
+                      <td id="rajshahi">রাজশাহী</td>
+                      <td>৬ মি.</td>
+                      <td>৭ মি.</td>
+                  </tr>
+                  <tr id="rangpur_city">
+                      <td id="rangpur">রংপুর</td>
+                      <td>৪ মি.</td>
+                      <td>৫ মি.</td>
+                  </tr>
+                  <tr id="khulna_city">
+                      <td id="khulna">খুলনা</td>
+                      <td>৪ মি.</td>
+                      <td>৩ মি.</td>
+                  </tr>
+                  <tr id="barisal_city">
+                      <td id="barisal">বরিশাল</td>
+                      <td>১ মি.</td>
+                      <td>০ মি.</td>
+                  </tr>
+                  <tr id="">
+                      <td id=""> .</td>
+                      <td> .</td>
+                      <td> .</td>
+                  </tr>
+              </table>
+            </div>
+  
+            <div class="city-time-layout">
+              <h3 class="ramadan-city-title">ঢাকার সময় থেকে কমবে</h3>
+              <table class="tableDesign">
+                  <tr class="haderTitle">
+                      <td>শহর</td>
+                      <td>সেহরি</td>
+                      <td>ইফতার</td>
+                  </tr>
+                  <tr id="sylhet_city">
+                      <td id="sylhet">সিলেট</td>
+                      <td>৭ মি.</td>
+                      <td>৬ মি.</td>
+                  </tr>
+                  <tr id="chittagong_city">
+                      <td id="chittagong">চট্টগ্রাম</td>
+                      <td>৫ মি.</td>
+                      <td>৬ মি.</td>
+                  </tr>
+                  <tr id="mymensingh_city">
+                      <td id="mymensingh">ময়মনসিংহ</td>
+                      <td>১ মি.</td>
+                      <td>০ মি.</td>
+                  </tr>
+                  <tr id="">
+                      <td id=""> .</td>
+                      <td> .</td>
+                      <td> .</td>
+                  </tr>
+                  <tr id="">
+                      <td id=""> .</td>
+                      <td> .</td>
+                      <td> .</td>
+                  </tr>
+              </table>
+            </div>
+          </div>
+          <!-- city settings -->
+    </div>
+
+    <!-- JS files -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/currentDateTime.js"></script><!-- JS : current Date&Time -->
+    <script src="./js/script.js"></script><!-- JS : আজকের দিনের জন্য ব্লিঙ্ক চালু -->
+</body>
+</html>

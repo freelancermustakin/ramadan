@@ -1,0 +1,108 @@
+/* ফন্ট স্টাইল সেট করা */
+body {
+    font-family: 'SolaimanLipi', Arial, sans-serif;
+    background-color: #b71c1c;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* মূল কন্টেইনার */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* শিরোনাম স্টাইল */
+header h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #d32f2f;
+}
+
+header h2 {
+    font-size: 18px;
+    color: #555;
+}
+
+header p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* টেবিল ডিজাইন */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+/* হেডার রো */
+th {
+    background-color: #d32f2f;
+    color: white;
+    font-size: 16px;
+}
+
+/* অল্টারনেট রো কালার */
+tbody tr:nth-child(even) {
+    background-color: #ffebee;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f8d7da;
+}
+
+/* হোভার ইফেক্ট */
+tbody tr:hover {
+    background-color: #f1c4c4;
+    transition: 0.3s;
+}
+
+/* মোবাইল রেসপন্সিভ ডিজাইন */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 8px;
+    }
+    header h1 {
+        font-size: 22px;
+    }
+}
+
+/* আজকের রোজার জন্য ব্লিঙ্কিং ব্যাকগ্রাউন্ড */
+@keyframes blink {
+    0% { background-color: yellow; }
+    50% { background-color: orange; }
+    100% { background-color: yellow; }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+/* রোজার জন্য city settings */
+.city-adjust-time-layout{
+	display: flex;
+	column-gap: 3px;
+	justify-content: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.city-time-layout{
+	width: 342px;
+}
